@@ -1,0 +1,164 @@
+[
+{
+"veiculo": "Gol",
+"marca": "Volkswagen",
+"cor": "Branco",
+"ano": "2020",
+"descricao": "Veículo compacto com bom desempenho",
+"vendido": false,
+"criacao": 1612602400000
+},
+{
+"veiculo": "Onix",
+"marca": "Chevrolet",
+"cor": "Preto",
+"ano": "2019",
+"descricao": "Veículo hatch muito popular",
+"vendido": false,
+"criacao": 1612602400000
+},
+{
+"veiculo": "Kicks",
+"marca": "Nissan",
+"cor": "Branco",
+"ano": "2020",
+"descricao": "SUV compacto com design arrojado",
+"vendido": true,
+"criacao": 1612602400000
+},
+{
+"veiculo": "HB20",
+"marca": "Hyundai",
+"cor": "Preto",
+"ano": "2019",
+"descricao": "Hatch compacto com bom custo-benefício",
+"vendido": false,
+"criacao": 1612602400000
+},
+{
+"veiculo": "Civic",
+"marca": "Honda",
+"cor": "Branco",
+"ano": "2020",
+"descricao": "Sedan esportivo com excelente desempenho",
+"vendido": true,
+"criacao": 1612602400000
+},
+
+    {
+    "veiculo": "Gol",
+    "marca": "Volkswagen",
+    "cor": "Branco",
+    "ano": 2020,
+    "descricao": "Veiculo seminovo, com poucos km rodados",
+    "vendido": false,
+    "criacao": 1611846400000
+    },
+    {
+    "veiculo": "Palio",
+    "marca": "Fiat",
+    "cor": "Preto",
+    "ano": 2019,
+    "descricao": "Veiculo com baixa quilometragem",
+    "vendido": true,
+    "criacao": 1670368000000
+    },
+    {
+    "veiculo": "Onix",
+    "marca": "Chevrolet",
+    "cor": "Cinza",
+    "ano": 2020,
+    "descricao": "Veiculo novo, com todas as revisões em dia",
+    "vendido": false,
+    "criacao": 1666782400000
+    },
+    {
+    "veiculo": "Ecosport",
+    "marca": "Ford",
+    "cor": "Prata",
+    "ano": 2019,
+    "descricao": "Veiculo semi-novo, com revisões em dia",
+    "vendido": true,
+    "criacao": 1619267200000
+    },
+    {
+    "veiculo": "Civic",
+    "marca": "Honda",
+    "cor": "Verde",
+    "ano": 2020,
+    "descricao": "Veiculo novo, com poucos km rodados",
+    "vendido": false,
+    "criacao": 1615681600000
+    },
+    {
+    "veiculo": "Elantra",
+    "marca": "Hyundai",
+    "cor": "Amarelo",
+    "ano": 2019,
+    "descricao": "Veiculo com baixa quilometragem",
+    "vendido": true,
+    "criacao": 1660268800000
+    },
+    {
+        "veiculo": "Uno",
+        "marca": "Fiat",
+        "cor": "Branco",
+        "ano": 2010,
+        "descricao": "Veiculo em bom estado, pneus novos",
+        "vendido": false,
+        "criacao": 162592000000
+        },
+        {
+        "veiculo": "Gol",
+        "marca": "Volkswagen",
+        "cor": "Cinza",
+        "ano": 2019,
+        "descricao": "Veiculo com garantia até 2024",
+        "vendido": true,
+        "criacao": 164723200000
+        },
+        {
+        "veiculo": "Civic",
+        "marca": "Honda",
+        "cor": "Preto",
+        "ano": 2015,
+        "descricao": "Veiculo top de linha, com muitos opcionais",
+        "vendido": false,
+        "criacao": 160332800000
+        },
+        {
+        "veiculo": "Sandero",
+        "marca": "Renault",
+        "cor": "Marrom",
+        "ano": 2010,
+        "descricao": "Veiculo com baixo km rodado",
+        "vendido": true,
+        "criacao": 166600000000
+        },
+        {
+        "veiculo": "Kwid",
+        "marca": "Renault",
+        "cor": "Verde",
+        "ano": 2020,
+        "descricao": "Veiculo novo, com apenas 1000 km rodados",
+        "vendido": false,
+        "criacao": 161909200000
+        },
+        {
+        "veiculo": "Onix",
+        "marca": "Chevrolet",
+        "cor": "Amarelo",
+        "ano": 2018,
+        "descricao": "Veiculo em excelente estado, com revisões em dia",
+        "vendido": true,
+        "criacao": 162070400000
+        },
+        {
+        "veiculo": "Lancer",
+        "marca": "Mitsubishi",
+        "cor": "Prata",
+        "ano": 2016,
+        "descricao": "Veiculo esportivo, com rodas aro 18",
+        "vendido": false,
+        "criacao": 162070400000}
+]
