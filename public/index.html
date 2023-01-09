@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Cadastro de Veículos</title>
+
+    <!-- Bootstrap CSS -->
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" rel="stylesheet">
+</head>
+<body>
+<!-- Header -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Cadastro de Veículos</a>
+    <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+            data-target="#navbarNav" data-toggle="collapse" type="button">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/index.html">Página Inicial</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link btn btn-primary" href="/listar.html">Consultar Veículos</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-6">
+            <button class="btn btn-primary btn-block" onclick="goToNewVehiclePage()">Cadastrar novo veículo</button>
+        </div>
+        <div class="col-6">
+            <button class="btn btn-secondary btn-block" onclick="goToListVehiclePage()">Consultar veículos</button>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-sm-6">
+            <h3>Total de Veículos não vendidos: <span class="badge badge-secondary"
+                                                      id="total-veiculos-nao-vendidos"></span></h3>
+        </div>
+        <div class="col-sm-6">
+            <h3>Veículos por década de fabricação</h3>
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Década de 1990
+                    <span class="badge badge-secondary badge-pill" id="decada-90"></span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Década de 2000
+                    <span class="badge badge-secondary badge-pill" id="decada-20"></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-sm-6">
+            <h3>Distribuição de veículos por fabricante</h3>
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Volkswagen
+                    <span class="badge badge-secondary badge-pill" id="Volkswagen"></span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Chevrolet
+                    <span class="badge badge-secondary badge-pill" id="Chevrolet"></span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Fiat
+                    <span class="badge badge-secondary badge-pill" id="Fiat"></span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Ford
+                    <span class="badge badge-secondary badge-pill" id="Ford"></span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Toyota
+                    <span class="badge badge-secondary badge-pill" id="Toyota"></span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Honda
+                    <span class="badge badge-secondary badge-pill" id="Honda"></span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Hyundai
+                    <span class="badge badge-secondary badge-pill" id="Hyundai"></span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Renault
+                    <span class="badge badge-secondary badge-pill" id="Renault"></span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Mitsubishi
+                    <span class="badge badge-secondary badge-pill" id="Mitsubishi"></span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Nissan
+                    <span class="badge badge-secondary badge-pill" id="Nissan"></span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-sm-6">
+            <h3>Veículos cadastrados na última semana</h3>
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Veículo</th>
+                    <th>Marca</th>
+                    <th>Ano</th>
+                    <th>Cor</th>
+                    <th>Data de Cadastro</th>
+                </tr>
+                </thead>
+                <tbody id="index-carros">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src="js/index.js"></script>
+</body>
+</html>

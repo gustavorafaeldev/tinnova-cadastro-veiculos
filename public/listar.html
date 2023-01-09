@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+
+    <!-- Bootstrap CSS -->
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" rel="stylesheet">
+
+    <script src="js/listar.js"></script>
+    <title>Consultar veículos</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/index.html">Cadastro de Veículos</a>
+    <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+            data-target="#navbarNav" data-toggle="collapse" type="button">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/index.html">Página Inicial</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link btn btn-primary" href="/listar.html">Consultar Veículos</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container mt-5">
+    <div class="row" style="width: 105%">
+        <div class="col-sm-6">
+            <h4>Filtro por ID</h4>
+            <form class="form-inline my-2 my-lg-0 mx-auto w-1000">
+                <input aria-label="ID do veículo" class="form-control mr-sm-2" id="id" name="id" placeholder="ID do veículo"
+                       required type="text">
+                <button class="btn btn-secondary my-2 my-sm-0" onclick="searchById()" type="submit">Filtrar</button>
+            </form>
+
+        </div>
+
+        <div class="col-sm-6">
+            <h4>Filtro por parâmetros</h4>
+            <form class="form-inline my-2 my-lg-0 mx-auto w-1000">
+                <select class="custom-select mr-sm-2" id="marca" name="marca" required>
+                    <option value="Volkswagen">Volkswagen</option>
+                    <option value="Chevrolet">Chevrolet</option>
+                    <option value="Fiat">Fiat</option>
+                    <option value="Ford">Ford</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Hyundai">Hyundai</option>
+                    <option value="Renault">Renault</option>
+                    <option value="Mitsubishi">Mitsubishi</option>
+                    <option value="Nissan">Nissan</option>
+                </select>
+                <select class="custom-select mr-sm-2" id="cor" name="cor" required>
+                    <option selected>Cor</option>
+                    <option value="Branco">Branco</option>
+                    <option value="Prata">Prata</option>
+                    <option value="Preto">Preto</option>
+                    <option value="Cinza">Cinza</option>
+                    <option value="Vermelho">Vermelho</option>
+                    <option value="Azul">Azul</option>
+                    <option value="Marrom">Marrom</option>
+                    <option value="Verde">Verde</option>
+                    <option value="Amarelo">Amarelo</option>
+                </select>
+                <input aria-label="Ano" class="form-control mr-sm-2" id="ano" name="ano" placeholder="Ano" required
+                       type="text">
+                <button class="btn btn-secondary my-2 my-sm-0" onclick="searchByParams()" type="submit">Filtrar</button>
+            </form>
+
+
+        </div>
+    </div>
+
+</div>
+
+
+<div class="container mt-5">
+    <div class="table-container mx-auto" style="width: 105%">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th class="d-none">ID</th>
+                <th>Veículo</th>
+                <th>Marca</th>
+                <th>Ano</th>
+                <th>Cor</th>
+                <th>Descrição</th>
+                <th>Vendido</th>
+                <th>Cadastro</th>
+                <th>Atualizado</th>
+                <th>Ações</th>
+            </tr>
+            </thead>
+            <tbody id="carros">
+
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
